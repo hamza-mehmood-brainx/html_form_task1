@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1>Job Application</h1>
+      <section id="personalInformation">
+        <form>
+          <label for="" class="sectionLabel">Personal Information</label>
+          <div>
+            <label for="name">Name:</label>
+           <div>
+             <input type="text" id="fname" name="fname" required size="35" />
+            <input type="text" id="lname" name="lname" required  size="40"/>
+           </div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="user@gmail.com"
+              size="80"
+            />
+          </div>
+          <div>
+            <label for="education">Education</label>
+            <select name="education" class="select">
+              <option value="N/A">Please Select</option>
+              <option value="highschool">High School</option>
+              <option value="bachelor">Bachelor's Degree</option>
+              <option value="master">Master's Degree</option>
+              <option value="phd">PhD</option>
+            </select>
+          </div>
+          <div>
+            <label for="resume">Resume</label>
+            <input type="file" id="resume" name="resume"  size="80"/>
+          </div>
+          <div>
+            <label for="address">Address</label>
+           <div class="address">
+             <input type="text" id="addressline1" name="addressline1" required size="80" /><br>
+            <input type="text" id="addressline2" name="addressline2" size="80" /><br>
+            <select name="country" class="select" >
+              <option value="N/A">Please Select</option>
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="uk">UK</option>
+            </select>
+           </div>
+          </div>
+
+          <div>
+            <label for="phone">Phone</label>
+            <div>
+<input type="text" id="countryCode" name="countryCode" required  size="10" placeholder="(+92)"/>
+            <input type="tel" id="phone" name="phone" required size="60" placeholder="331 6767111"/>
+            </div>
+            
+          </div>
+          <div>
+            <label for="hobbies">What are your hobbies?</label><br>
+            <input type="text" id="hobby" name="hobbies" size="80" />
+          </div>
+          <label for="" class="sectionLabel">Previous/Current Employement Details</label>
+          <div>
+            <label for="company">Company Name</label>
+            <input type="text" name="company" id="companyName" required  size="80"/>
+          </div>
+
+          <div>
+            <label for="jobTitle">Job Title</label>
+            <input type="text" name="jobTitle" id="jobTitle" required  size="80"/>
+          </div>
+          <div>
+            <label for="jobDuration">How long you were here?</label>
+            <input type="text" name="jobDuration" id="jobDuration" required size="80" />
+          </div>
+
+          <label for="" class="sectionLabel">Reference #1</label>
+            <div>
+                <label for="refName1">Name</label>
+                <input type="text" name="refName1" id="refName1" required size="80"/>
+            </div>
+            <div>
+                <label for="refPhone1">Phone</label>
+                <input type="text" name="refPhone1" id="refPhone1" required size="80" />
+            </div>
+            <label for="" class="sectionLabel">Reference #2</label>
+            <div>
+                <label for="refName2">Name</label>
+                <input type="text" name="refName2" id="refName2" required size="80" />
+            </div>
+            <div>
+                <label for="refPhone2">Phone</label>
+                <input type="text" name="refPhone2" id="refPhone2" required size="80"/>
+            </div>
+
+        </form>
+        <button class="applyBtn">Apply Now</button>
+      </section>
+    </div>
+  </body>
+</html>
