@@ -35,10 +35,10 @@
   }
 
   .sectionLabel {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: maroon;
-    margin-bottom: 10px;
- padding: 5px 0;
+      margin-bottom: 10px;
+      padding: 5px 0;
       font-weight: 400;
 
   }
@@ -97,7 +97,8 @@
   .select {
       width: 300px;
       margin-bottom: 5px;
-    font-size: 11px;;
+      font-size: 11px;
+      ;
   }
 
   .innerDiv {
@@ -108,7 +109,7 @@
 
   .selectOpt {
       border: 1px solid rgb(174, 167, 167);
-      width: 386px;
+      width: 390px;
   }
 
   .innerDiv {
@@ -132,7 +133,8 @@
 
   .hobbyDiv>input {
       width: 99%;
-margin-top: -10px !important;
+      margin-top: -10px !important;
+      margin-bottom: 15px;
   }
 
 
@@ -152,26 +154,26 @@ margin-top: -10px !important;
   #phone {
       width: 325px;
       margin-left: 5px;
-      
+
   }
 
   #countryCode {
       width: 35px
   }
 
-  #city{
+  #city {
 
-     flex-grow: 1;
+      flex-grow: 1;
   }
 
   #state {
-    flex-grow: 1;
+      flex-grow: 1;
 
 
   }
 
   #zip {
-     flex-grow: 1;
+      flex-grow: 1;
 
   }
 
@@ -186,7 +188,7 @@ margin-top: -10px !important;
       color: gray;
   }
 
-   .labelDiv1 {
+  .labelDiv1 {
       margin: 0;
       padding: 0;
       display: flex;
@@ -196,40 +198,41 @@ margin-top: -10px !important;
       color: gray;
       font-size: 9px;
   }
+
   .labelDiv>span {
       margin: 0 !important;
       padding: 0 !important;
       font-size: 9px;
   }
 
-  .test{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-row-gap: 5px;
-width: 80%;
+  .test {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      row-gap: 5px;
+      width: 80%;
   }
 
-  .btn{
-    display: flex ;
-    justify-content: center;
-    align-items: center;
+  .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
   }
 
-.marginTop{
-    margin-top: 10px;
-}
+  .marginTop {
+      margin-top: 30px;
+  }
 
-.educationDiv{
-    width: 390px;
- margin: 0 !important;
- padding: 0 !important;
- margin-left: -20px;
-}
+  .educationDiv {
+      width: 390px;
+      margin: 0 !important;
+      padding: 0 !important;
+      margin-left: -20px;
+  }
 
-form label{
-    font-size: 14px;
-    font-weight: 300;
-}
+  form label {
+      font-size: 14px;
+      font-weight: 400px;
+  }
