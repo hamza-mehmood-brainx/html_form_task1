@@ -1,94 +1,207 @@
-  body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            margin: 0;
-        }
-        #main{
-            width: 750px;
-            padding: 5px;
-            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.306);
-            border-radius: 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            border-top: 20px solid maroon;
-        }
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
 
-        #main h1{
-            text-align: center;
-            font-size: 2rem;
-            color: #333;
-        }
+  #main {
+      width: 95%;
+      padding: 0px 10px;
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.306);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      border-top: 20px solid maroon;
+      height: 98vh;
+  }
 
-        #personalInformation{
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-        }
+  #main h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #333;
+  }
 
-        .sectionLabel{
-            font-size: 1.5rem;
-            color: maroon;
-            margin-top: 20px;
-            font-weight: bold;
-            margin: 10px
+  #personalInformation {
+      display: flex;
+      flex-direction: column;
 
-        }
+  }
 
-        form{
-            width: 100%;
-        }
-        form input{
-            padding: 5px;
-        
-        }
-        form div{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
+  .sectionLabel {
+      font-size: 1.5rem;
+      color: maroon;
+      margin-top: 20px;
+      font-weight: bold;
 
-        .address{
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: start;
-            padding: 0;
-            margin: 0;
-        }
+  }
 
-        select{
-            padding: 5px;
-        }
+  form {
+      width: 95%;
+  }
 
-        .applyBtn{
-            background-color: maroon;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            margin-top: 20px;
-        }
+  form input {
+      padding: 5px;
+
+  }
+
+  form>div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+  }
+
+  .address {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: start;
+      padding: 0 !important;
+      margin: 0 !important;
+      margin-right: -5px;
+  }
+
+  #addressline1 {
+      width: 550px;
+  }
+
+  #addressline2 {
+      width: 550px;
+  }
+
+  select {
+      padding: 5px;
+  }
+
+  .applyBtn {
+      background-color: maroon;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      width: 150px;
+  }
 
 
-        .select{
-            width: 35rem;
-            
-        }
+  .select {
+      width: 250px;
+      margin-bottom: 5px;
 
-        .innerDiv{
-              padding: 0;
-            width: 35rem;
-            margin: 0;
-        }
+  }
 
-        .selectOpt{
-            border: 1px solid rgb(174, 167, 167);
-        }
+  .innerDiv {
+      padding: 0;
+      width: 35rem;
+      margin: 0;
+  }
+
+  .selectOpt {
+      border: 1px solid rgb(174, 167, 167);
+  }
+
+  .innerDiv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+  }
+
+  .hobbyDiv {
+      display: flex;
+      ;
+      flex-direction: column;
+      justify-content: start;
+      margin: 0 !important;
+
+      align-items: start;
+  }
+
+  .hobbyDiv>input {
+      width: 99%;
+      margin-top: -20px;
+  }
+
+
+  #fname {
+      width: 250px;
+  }
+
+  #lname {
+      width: 250px;
+  }
+
+  #email {
+      width: 545px;
+  }
+
+  #phone {
+      width: 495px;
+      margin-left: 5px;
+      ;
+  }
+
+  #countryCode {
+      width: 45px
+  }
+
+  #city{
+    width: 50%;
+  }
+
+  #state {
+      width: 15%;
+      margin: 0 5px;
+  }
+
+  #zip {
+      width: 40%;
+      margin-left: 5px;
+  }
+
+
+  .labelDiv {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      color: gray;
+  }
+
+   .labelDiv1 {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: gray;
+      font-size: 12px;
+  }
+  .labelDiv>span {
+      margin: 0 !important;
+      padding: 0 !important;
+      font-size: 12px;
+  }
+
+  .test{
+    display: flex;
+  }
+
+  .btn{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+
+  }
