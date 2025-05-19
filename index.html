@@ -9,19 +9,19 @@
 </head>
 
 <body>
-  <div id="main">
+  <div class="main">
     <h1>Job Application</h1>
-    <section id="personalInformation">
+    <section class="personalInformation">
       <form>
         <label for="" class="sectionLabel">Personal Information</label>
-      <!--  Name field  -->
+        <!--  Name field  -->
         <div class="">
           <label for="name">Name</label>
-          <div class="innerDiv">
-            <div class="labelDiv"> <input type="text" id="fname" name="fname" required />
+          <div class="fieldOutsideDiv">
+            <div class="labelDiv"> <input type="text" id="fname" class="name" name="fname" required />
               <span>First Name</span>
             </div>
-            <div class="labelDiv"> <input type="text" id="lname" name="lname" required />
+            <div class="labelDiv"> <input type="text" id="lname" class="name" name="lname" required />
               <span>Last Name</span>
             </div>
           </div>
@@ -29,20 +29,20 @@
         <!-- Email field -->
         <div>
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="user@example.com" size="80" />
+          <input type="email" id="email" class="email" name="email" required placeholder="user@example.com" size="80" />
         </div>
         <!-- Education field -->
         <div>
           <label for="education">Education</label>
-         <div class="educationDiv">
-           <select name="education" class="select">
-            <option value="N/A">Please Choose</option>
-            <option value="highschool">High School</option>
-            <option value="bachelor">Bachelor's Degree</option>
-            <option value="master">Master's Degree</option>
-            <option value="phd">PhD</option>
-          </select>
-         </div>
+          <div class="educationDiv">
+            <select name="education" class="select">
+              <option value="N/A">Please Choose</option>
+              <option value="highschool">High School</option>
+              <option value="bachelor">Bachelor's Degree</option>
+              <option value="master">Master's Degree</option>
+              <option value="phd">PhD</option>
+            </select>
+          </div>
         </div>
         <!-- Resume field -->
         <div>
@@ -54,12 +54,11 @@
         <div>
           <label for="address">Address</label>
           <div class="address ">
-            <div class="labelDiv1"> <input type="text" id="addressline1" name="addressline1" required
-              />
+            <div class="labelDiv1"> <input type="text" id="addressline1" class="addressline" name="addressline1"
+                required />
               <span>Address 1</span>
             </div>
-            <div class="labelDiv1"> <input type="text" id="addressline2" name="addressline2"
-              />
+            <div class="labelDiv1"> <input type="text" id="addressline2" class="addressline" name="addressline2" />
               <span>Address 2</span>
             </div>
             <div class="labelDiv1"> <select name="country" class="select country">
@@ -72,16 +71,16 @@
             </div>
 
             <div class="test">
-              <div class="labelDiv1" id="city">
-             <input type="text" id="cityF" name="city" required  size="20"/>
+              <div class="labelDiv1" class="city">
+                <input type="text" id="cityF" name="city" required size="20" />
                 <span>City</span>
               </div>
-              <div class="labelDiv1" id="state">
-               <input type="text" id="stateF" name="state" required  size="5"/>
+              <div class="labelDiv1" class="state">
+                <input type="text" id="stateF" name="state" required size="5" />
                 <span>State</span>
               </div>
-              <div class="labelDiv1" id="zip"> 
-              <input type="text" id="zipF" name="zip" required size="10"/>
+              <div class="labelDiv1" class="zip">
+                <input type="text" id="zipF" name="zip" required size="10" />
                 <span>Zip Code</span>
               </div>
             </div>
@@ -94,9 +93,9 @@
         <!-- Phone Number field -->
         <div>
           <label for="phone">Phone Number</label>
-          <div class="innerDiv">
-            <input type="text" id="countryCode" name="countryCode" required size="10" />
-            <input type="tel" id="phone" name="phone" required size="68" />
+          <div class="fieldOutsideDiv">
+            <input type="text" id="countryCode" name="countryCode" class="countryCode" required size="10" />
+            <input type="tel" id="phone" name="phone" class="phone" size="68" />
           </div>
 
         </div>
@@ -121,7 +120,7 @@
           <label for="jobDuration">How long you were here?</label>
           <input type="text" name="jobDuration" id="jobDuration" required size="52" />
         </div>
-<!-- Reference One -->
+        <!-- Reference One -->
         <label for="" class="sectionLabel">Reference #1</label>
         <div>
           <label for="refName1">Name</label>
