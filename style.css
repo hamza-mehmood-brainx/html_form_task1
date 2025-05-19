@@ -155,17 +155,19 @@
   }
 
   #city{
-    width: 50%;
+
+     flex-grow: 1;
   }
 
   #state {
-      width: 15%;
-      margin: 0 5px;
+    flex-grow: 1;
+
+
   }
 
   #zip {
-      width: 40%;
-      margin-left: 5px;
+     flex-grow: 1;
+
   }
 
 
@@ -197,6 +199,11 @@
 
   .test{
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+row-gap: 5px;
+width: 80%;
   }
 
   .btn{
@@ -205,3 +212,4 @@
     align-items: center;
 
   }
+
