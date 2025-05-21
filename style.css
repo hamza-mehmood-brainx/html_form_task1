@@ -155,7 +155,7 @@
   }
 
   .countryCode {
-      width: 35px
+      width: 40px
   }
 
   .city {
@@ -207,8 +207,8 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      row-gap: 5px;
       width: 80%;
+      column-gap: 5px;
   }
 
   .btn {
@@ -233,3 +233,109 @@
       font-size: 14px;
       font-weight: 400px;
   }
+
+
+  .referenceFields{
+    width: 360px;
+  }
+
+  .phoneLabel{
+    width: 150px;
+  }
+
+  @media screen and (max-width: 600px) {
+  .main {
+    width: 100%;
+    padding: 5px 5px;
+    margin-bottom: 0;
+  }
+
+  .main h1 {
+    font-size: 1.4rem;
+  }
+
+  .personalInformation,
+  .selectOpt,
+  .referenceFields,
+  .fieldOutsideDiv,
+  .hobbyDiv,
+  .hobbyDiv > input,
+  .name,
+  .email,
+  .phone,
+  .countryCode,
+  .address
+  .city,
+  .state,
+  .zip,
+  .labelDiv,
+  .labelDiv1,
+  .labelDiv > span,
+  .test,
+  .btn {
+    width: 100%;
+  }
+
+  form > div {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+
+  .addressline {
+    width: 100%;
+    margin-left: 7px;
+  }
+  .address{
+    width: 100%;
+    justify-content: start;
+  }
+  
+  .name {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .email {
+    width: 100%;
+  }
+
+
+
+  .countryCode {
+    width: 20%;
+    margin-bottom: 4px;
+    margin-top: 4px;
+  }
+
+  .educationDiv {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .fieldOutsideDiv {
+    flex-direction: column;
+  }
+
+  .referenceFields {
+    margin-top: 5px;
+  }
+  .phoneFieldsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .educationDiv, .select{
+    width: 100%;;
+  }
+
+ .labelDiv1{
+    justify-content: start;
+ }
+
+}
