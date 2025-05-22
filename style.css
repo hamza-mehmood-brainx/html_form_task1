@@ -2,6 +2,7 @@
       --primary-color: rgb(82, 3, 3);
       --secondary-color: #800000;
       --black-color: black;
+      --box-shadow-color: rgba(128, 128, 128, 0.472);
   }
 
   body {
@@ -17,7 +18,7 @@
   .main {
       width: 550px;
       padding: 5px 10px;
-      box-shadow: 0px 0px 4px 2px gray;
+      box-shadow: 0px 0px 4px 3px var(--box-shadow-color) ;
       border-radius: 2px;
       display: flex;
       flex-direction: column;
@@ -102,7 +103,6 @@
       width: 300px;
       margin-bottom: 5px;
       font-size: 11px;
-      ;
   }
 
 
@@ -138,14 +138,15 @@
 
 
   .name {
-      width: 179px;
-      margin-right: 8px;
+      width: 185px;
+      margin-right: 3px;
   }
 
 
 
   .email {
-      width: 380px;
+      width: 383px;
+
   }
 
   .phone {
@@ -160,7 +161,7 @@
 
   .city {
 
-      flex-grow: 1;
+      flex-grow: 2;
   }
 
   .state {
@@ -211,6 +212,9 @@
       column-gap: 5px;
   }
 
+  .country{
+    width: 385px;
+  }
   .btn {
       display: flex;
       justify-content: center;
@@ -265,7 +269,19 @@
       appearance: none;
   }
 
+.ciyt input{
+    width: 200px;
+    background-color: red;
+}
+
+.state input{
+    width: 100px;
+}
+
   @media screen and (max-width: 600px) {
+    body{
+        padding: 8px;
+    }
       .main {
           width: 100%;
           padding: 5px 5px;
