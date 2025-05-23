@@ -1,411 +1,389 @@
-  :root {
-      --primary-color: rgb(82, 3, 3);
-      --secondary-color: #800000;
-      --black-color: black;
-      --box-shadow-color: rgba(128, 128, 128, 0.238);
-  }
+:root {
+  --primary-color: rgb(82, 3, 3);
+  --secondary-color: #800000;
+  --black-color: black;
+  --box-shadow-color: rgba(128, 128, 128, 0.238);
+}
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main {
+  width: 550px;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 2px 3px var(--box-shadow-color);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-top: 20px solid var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.personalInformation {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionLabel {
+  font-size: 1.1rem;
+  color: maroon;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  font-weight: 600;
+}
+
+form {
+  width: 95%;
+}
+
+form input {
+  padding: 2px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin: 13px 0;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-right: -5px;
+}
+
+.addressline {
+  width: 380px;
+}
+
+select {
+  padding: 5px;
+}
+
+.applyBtn {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  width: 100px;
+}
+
+.select {
+  width: 300px;
+  margin-bottom: 5px;
+  font-size: 11px;
+}
+
+.selectOpt {
+  border: 1px solid rgb(174, 167, 167);
+  width: 382px;
+}
+
+.fieldOutsideDiv {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 35rem;
+}
+
+.hobbyDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0 !important;
+
+  align-items: start;
+}
+
+.hobbyDiv > input {
+  width: 99%;
+  margin-top: -10px !important;
+  margin-bottom: 15px;
+}
+
+.name {
+  width: 185px;
+  margin-right: 3px;
+}
+
+.email-wrapper {
+  width: 391px;
+}
+
+.email {
+  width: 90%;
+}
+
+.phone {
+  width: 325px;
+  margin-left: 5px;
+}
+
+.countryCode {
+  width: 40px;
+}
+
+.city {
+  flex-grow: 2;
+}
+
+.state {
+  flex-grow: 1;
+}
+
+.zip {
+  flex-grow: 1;
+}
+
+.labelDiv {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  color: gray;
+}
+
+.labelDiv1 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-size: 9px;
+}
+
+.labelDiv > span {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 9px;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 99%;
+  column-gap: 15px;
+}
+
+.test .city {
+  max-width: 210px;
+}
+
+.test .state {
+  max-width: 35px;
+}
+
+.test .zip {
+  max-width: 92px;
+}
+
+.test .labelDiv1 input {
+  width: 100%;
+}
+
+.country {
+  width: 380px;
+  margin-right: 8px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marginTop {
+  margin-top: 30px;
+}
+
+.educationDiv {
+  width: 390px;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-left: -20px;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 400px;
+}
+
+.referenceFields {
+  width: 360px;
+}
+
+.phoneLabel {
+  width: 150px;
+}
+
+.select {
+  background-image: linear-gradient(
+      45deg,
+      transparent 50%,
+      var(--black-color) 50%
+    ),
+    linear-gradient(135deg, var(--black-color) 50%, transparent 50%);
+
+  background-position: calc(100% - 15px) calc(1em + -2px),
+    calc(100% - 10px) calc(1em + -2px), calc(100% - 2.5em) 1em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+}
+
+.ciyt input {
+  width: 200px;
+  background-color: red;
+}
+
+.state input {
+  width: 100px;
+}
+
+.wrapper {
+  width: 75%;
+}
+@media screen and (max-width: 600px) {
   body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      font-family: sans-serif;
+    padding: 8px;
   }
-
   .main {
-      width: 550px;
-      padding: 5px 10px;
-      box-shadow: 0px 0px 2px 3px var(--box-shadow-color) ;
-      border-radius: 2px;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      border-top: 20px solid var(--primary-color);
-      margin-bottom: 5px;
-
+    width: 100%;
+    padding: 5px 5px;
+    margin-bottom: 0;
   }
 
   .main h1 {
-      text-align: center;
-      font-size: 1.6rem;
-      color: #333;
-      margin-top: 0;
-      margin-bottom: 5px;
+    font-size: 1.4rem;
   }
 
-  .personalInformation {
-      display: flex;
-      flex-direction: column;
-
-  }
-
-  .sectionLabel {
-      font-size: 1.1rem;
-      color: maroon;
-      margin-bottom: 10px;
-      padding: 5px 0;
-
-  }
-
-  form {
-      width: 95%;
-  }
-
-  form input {
-      padding: 2px;
-
-  }
-
-  form>div {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: start;
-      margin: 13px 0;
-  }
-
-  .address {
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      align-items: end;
-      padding: 0 !important;
-      margin: 0 !important;
-      margin-right: -5px;
-  }
-
-  .addressline {
-      width: 380px;
-  }
-
-  select {
-      padding: 5px;
-  }
-
-  .applyBtn {
-      background-color: var(--secondary-color);
-      color: white;
-      padding: 5px 5px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1.3rem;
-      width: 100px;
-  }
-
-
-  .select {
-      width: 300px;
-      margin-bottom: 5px;
-      font-size: 11px;
-  }
-
-
-  .selectOpt {
-      border: 1px solid rgb(174, 167, 167);
-      width: 382px;
-  }
-
-  .fieldOutsideDiv {
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-      width: 35rem;
-
-  }
-
-  .hobbyDiv {
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      margin: 0 !important;
-
-      align-items: start;
-  }
-
-  .hobbyDiv>input {
-      width: 99%;
-      margin-top: -10px !important;
-      margin-bottom: 15px;
-  }
-
-
-  .name {
-      width: 185px;
-      margin-right: 3px;
-  }
-
-  .email-wrapper{
-    width: 391px;
-  }
-
-
-  .email {
-      width: 90%;
-
-  }
-
-  .phone {
-      width: 325px;
-      margin-left: 5px;
-
-  }
-
-  .countryCode {
-      width: 40px
-  }
-
-  .city {
-
-      flex-grow: 2;
-  }
-
-  .state {
-      flex-grow: 1;
-
-
-  }
-
-  .zip {
-      flex-grow: 1;
-
-  }
-
-
-  .labelDiv {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: start;
-      color: gray;
-  }
-
-  .labelDiv1 {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: gray;
-      font-size: 9px;
-  }
-
-  .labelDiv>span {
-      margin: 0 !important;
-      padding: 0 !important;
-      font-size: 9px;
-  }
-
-  .test {
-      display: flex;
-      flex-direction: row;
-      justify-content: start;
-      align-items: center;
-      width: 99%;
-      column-gap: 15px;
-  }
-
-  .test .city{
-     max-width: 210px;
-  }
-
-  .test .state{
-     max-width: 35px
-  }
-
-  .test .zip{
-    max-width: 92px;
-  }
-
-  .test .labelDiv1 input{
+  .personalInformation,
+  .selectOpt,
+  .referenceFields,
+  .fieldOutsideDiv,
+  .hobbyDiv,
+  .hobbyDiv > input,
+  .name,
+  .email,
+  .phone,
+  .countryCode,
+  .address .city,
+  .state,
+  .zip,
+  .labelDiv,
+  .labelDiv1,
+  .labelDiv > span,
+  .test,
+  .btn,
+  .email-wrapper,
+  .wrapper {
     width: 100%;
   }
 
-  
-  .country{
-    width: 388px;
-  }
-  .btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+  form > div {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
   }
 
-  .marginTop {
-      margin-top: 30px;
+  .test {
+    width: 99%;
+  }
+
+  .addressline {
+    width: 100%;
+    margin-left: 7px;
+  }
+
+  .address {
+    width: 100%;
+    justify-content: start;
+  }
+
+  .name {
+    margin-right: 0;
+  }
+
+  .countryCode {
+    width: 20%;
+    margin-bottom: 4px;
+    margin-top: 4px;
   }
 
   .educationDiv {
-      width: 390px;
-      margin: 0 !important;
-      padding: 0 !important;
-      margin-left: -20px;
+    width: 100%;
+    margin-left: 0;
   }
 
-  form label {
-      font-size: 14px;
-      font-weight: 400px;
+  .fieldOutsideDiv {
+    flex-direction: column;
   }
 
-
-  .referenceFields {
-      width: 360px;
+  .referenceFields,
+  .name,
+  .email,
+  .select,
+  .selectOpt {
+    margin-top: 5px;
   }
 
-  .phoneLabel {
-      width: 150px;
+  .phoneFieldsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
+  .educationDiv,
   .select {
-      background-image:
-          linear-gradient(45deg, transparent 50%, var(--black-color) 50%),
-          linear-gradient(135deg, var(--black-color) 50%, transparent 50%);
-         
-      background-position:
-          calc(100% - 15px) calc(1em + -2px),
-          calc(100% - 10px) calc(1em + -2px),
-          calc(100% - 2.5em) 1em;
-      background-size:
-          5px 5px,
-          5px 5px,
-          1px 1.5em;
-      background-repeat: no-repeat;
-
-      -moz-appearance: none;
-      /* Firefox */
-      -webkit-appearance: none;
-      /* Safari and Chrome */
-      appearance: none;
+    width: 100%;
   }
 
-.ciyt input{
-    width: 200px;
-    background-color: red;
-}
-
-.state input{
-    width: 100px;
-}
-
-.wrapper{
-    width: 75%;
-}
-  @media screen and (max-width: 600px) {
-    body{
-        padding: 8px;
-    }
-      .main {
-          width: 100%;
-          padding: 5px 5px;
-          margin-bottom: 0;
-      }
-
-      .main h1 {
-          font-size: 1.4rem;
-      }
-
-      .personalInformation,
-      .selectOpt,
-      .referenceFields,
-      .fieldOutsideDiv,
-      .hobbyDiv,
-      .hobbyDiv>input,
-      .name,
-      .email,
-      .phone,
-      .countryCode,
-      .address .city,
-      .state,
-      .zip,
-      .labelDiv,
-      .labelDiv1,
-      .labelDiv>span,
-      .test,
-      .btn ,
-      .email-wrapper,
-      .wrapper{
-          width: 100%;
-      }
-
-      form>div {
-          flex-direction: column;
-          align-items: start;
-          width: 100%;
-      }
-
-      .test{
-        width: 99%;
-      }
-
-     
-      .addressline {
-          width: 100%;
-          margin-left: 7px;
-      }
-
-      .address {
-          width: 100%;
-          justify-content: start;
-      }
-
-      .name {
-          margin-right: 0;
-      }
-
-
-
-
-
-      .countryCode {
-          width: 20%;
-          margin-bottom: 4px;
-          margin-top: 4px;
-      }
-
-      .educationDiv {
-          width: 100%;
-          margin-left: 0;
-      }
-
-      .fieldOutsideDiv {
-          flex-direction: column;
-      }
-
-      .referenceFields,
-      .name,
-      .email,
-      .select,
-      .selectOpt {
-          margin-top: 5px;
-      }
-
-      .phoneFieldsWrapper {
-          display: flex;
-          flex-direction: row;
-          justify-content: start;
-          align-items: center;
-          width: 100%;
-          margin: 0;
-          padding: 0;
-      }
-
-      .educationDiv,
-      .select {
-          width: 100%;
-          ;
-      }
-
-      .labelDiv1 {
-          justify-content: start;
-      }
-
+  .labelDiv1 {
+    justify-content: start;
   }
+
+  .country{
+    margin-right: 0px;
+  }
+}
