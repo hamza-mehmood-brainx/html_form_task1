@@ -29,7 +29,8 @@
         <!-- Email field -->
         <div>
           <label for="email">Email</label>
-          <input type="email" id="email" class="email" name="email" required placeholder="user@example.com" size="80" />
+          <div class="email-wrapper"> <input type="email" id="email" class="email" name="email" required placeholder="user@example.com" size="80" /></div>
+         
         </div>
         <!-- Education field -->
         <div>
@@ -47,7 +48,8 @@
         <!-- Resume field -->
         <div>
           <label for="resume">Resume</label>
-          <div class=" selectOpt"> <input type="file" id="resume" name="resume" size="60" /></div>
+          <div class="wrapper"><div class=" selectOpt"> <input type="file" id="resume" name="resume" size="60" /></div></div>
+          
 
         </div>
         <!-- Address field -->
@@ -71,29 +73,26 @@
             </div>
 
             <div class="test">
-              <div class="labelDiv1" class="city">
-                <input type="text" id="cityF" name="city" required size="20" />
+              <div class="labelDiv1 city" >
+                <input type="text" id="cityF" name="city" required  />
                 <span>City</span>
               </div>
-              <div class="labelDiv1" class="state">
-                <input type="text" id="stateF" name="state" required size="5" />
+              <div class="labelDiv1 state" >
+                <input type="text" id="stateF" name="state" required  />
                 <span>State</span>
               </div>
-              <div class="labelDiv1" class="zip">
-                <input type="text" id="zipF" name="zip" required size="10" />
+              <div class="labelDiv1 zip">
+                <input type="text" id="zipF" name="zip" required  />
                 <span>Zip Code</span>
               </div>
             </div>
-
-
-
 
           </div>
         </div>
         <!-- Phone Number field -->
         <div>
-          <label for="phone">Phone Number</label>
-          <div class="fieldOutsideDiv">
+          <label for="phone" class="phoneLabel">Phone Number</label>
+          <div class="fieldOutsideDiv phoneFieldsWrapper">
             <input type="text" id="countryCode" name="countryCode" class="countryCode" required size="10" />
             <input type="tel" id="phone" name="phone" class="phone" size="68" />
           </div>
@@ -108,37 +107,37 @@
         <label for="" class="sectionLabel ">Previous/Current Employement Details</label>
         <div class="marginTop">
           <label for="company">Company Name</label>
-          <input type="text" name="company" id="companyName" required size="52 " />
+          <input type="text" name="company" id="companyName" required class="referenceFields" />
         </div>
         <!-- Job Title -->
         <div>
           <label for="jobTitle">Job Title</label>
-          <input type="text" name="jobTitle" id="jobTitle" required size="52" />
+          <input type="text" name="jobTitle" id="jobTitle" required class="referenceFields" />
         </div>
         <!-- Job Duration -->
         <div>
           <label for="jobDuration">How long you were here?</label>
-          <input type="text" name="jobDuration" id="jobDuration" required size="52" />
+          <input type="text" name="jobDuration" id="jobDuration" required class="referenceFields" />
         </div>
         <!-- Reference One -->
         <label for="" class="sectionLabel">Reference #1</label>
         <div>
           <label for="refName1">Name</label>
-          <input type="text" name="refName1" id="refName1" required size="52" />
+          <input type="text" name="refName1" id="refName1" required class="referenceFields" />
         </div>
         <div>
           <label for="refPhone1">Phone</label>
-          <input type="text" name="refPhone1" id="refPhone1" required size="52" />
+          <input type="text" name="refPhone1" id="refPhone1" required class="referenceFields" />
         </div>
         <!-- Reference Two -->
         <label for="" class="sectionLabel">Reference #2</label>
         <div>
           <label for="refName2">Name</label>
-          <input type="text" name="refName2" id="refName2" required size="52" />
+          <input type="text" name="refName2" id="refName2" required class="referenceFields" />
         </div>
         <div>
           <label for="refPhone2">Phone</label>
-          <input type="text" name="refPhone2" id="refPhone2" required size="52" />
+          <input type="text" name="refPhone2" id="refPhone2" required class="referenceFields" />
         </div>
 
       </form>
