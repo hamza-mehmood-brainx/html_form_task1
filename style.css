@@ -142,10 +142,13 @@
       margin-right: 3px;
   }
 
+  .email-wrapper{
+    width: 391px;
+  }
 
 
   .email {
-      width: 383px;
+      width: 90%;
 
   }
 
@@ -208,7 +211,7 @@
       flex-direction: row;
       justify-content: start;
       align-items: center;
-      width: 98%;
+      width: 99%;
       column-gap: 15px;
   }
 
@@ -230,7 +233,7 @@
 
   
   .country{
-    width: 385px;
+    width: 388px;
   }
   .btn {
       display: flex;
@@ -326,7 +329,8 @@
       .labelDiv1,
       .labelDiv>span,
       .test,
-      .btn {
+      .btn ,
+      .email-wrapper{
           width: 100%;
       }
 
