@@ -2,7 +2,7 @@
       --primary-color: rgb(82, 3, 3);
       --secondary-color: #800000;
       --black-color: black;
-      --box-shadow-color: rgba(128, 128, 128, 0.472);
+      --box-shadow-color: rgba(128, 128, 128, 0.238);
   }
 
   body {
@@ -18,14 +18,12 @@
   .main {
       width: 550px;
       padding: 5px 10px;
-      box-shadow: 0px 0px 4px 3px var(--box-shadow-color) ;
+      box-shadow: 0px 0px 2px 3px var(--box-shadow-color) ;
       border-radius: 2px;
       display: flex;
       flex-direction: column;
       justify-content: start;
       border-top: 20px solid var(--primary-color);
-
-
       margin-bottom: 5px;
 
   }
@@ -108,7 +106,7 @@
 
   .selectOpt {
       border: 1px solid rgb(174, 167, 167);
-      width: 390px;
+      width: 382px;
   }
 
   .fieldOutsideDiv {
@@ -298,6 +296,9 @@
     width: 100px;
 }
 
+.wrapper{
+    width: 75%;
+}
   @media screen and (max-width: 600px) {
     body{
         padding: 8px;
@@ -330,7 +331,8 @@
       .labelDiv>span,
       .test,
       .btn ,
-      .email-wrapper{
+      .email-wrapper,
+      .wrapper{
           width: 100%;
       }
 
@@ -340,6 +342,11 @@
           width: 100%;
       }
 
+      .test{
+        width: 99%;
+      }
+
+     
       .addressline {
           width: 100%;
           margin-left: 7px;
